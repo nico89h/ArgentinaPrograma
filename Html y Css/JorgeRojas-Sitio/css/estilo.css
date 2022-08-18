@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+}
+nav a{
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+}
+#accesibilidad a{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu ul{
+    list-style: none;
+}
+header{
+    background-color: rgb(148, 38, 38);
+}
+h1{
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+}
+h2{
+    margin: 2vw;
+}
+footer{
+    text-align: center;
+}
+footer p{
+    margin: 2em;
+}
+@media all and (min-width:320px){
+    /*Inicio del nav*/
+    #menu2 img{
+        width: 10vw;
+    }
+    #menu2 #cerrarmenu{
+        display:none;
+    }
+    #menu2 #menu{
+        height: 0;
+        transition: height 0.5s ease;
+        overflow: hidden;
+    }
+    #menu2:target #abrir{
+        display: none;
+    } 
+    #menu2:target #cerrarmenu{
+        display: block;
+    }
+    #menu2:target #menu{
+        height: 30vh;
+        transition: height 1s ease;
+    }
+    #menu a{
+        background-color: white;
+        display: block;
+        margin-top: 0.6em;
+        margin-bottom: 0.3em;
+        font-size: 1.3em;
+        color: black;
+    }
+
+    /*Fin del nav*/
+    
+}
+@media screen and (min-width:320px){
+    /*Inicio de columnas*/
+    .columnas{
+        column-count: 1;
+        column-width: 100%;
+    }
+    .columnas  h2{
+        text-align: center;
+    }
+    /*Fin de columnas*/
+    /*Inicio de tabla*/
+    table{
+        border: 0.5em blue solid;
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulos{
+        display: none;
+    }
+    tr figure{
+        margin: 0 auto;
+        width: 30%;
+    }
+    th{
+        text-align: start;
+        border: blue solid 0.5em;
+    }
+    td{
+        border: blue solid 0.5em;
+    }
+    th:nth-of-type(1):before{
+        content:"Nombre del disco";
+    }
+    td:nth-of-type(1):before{
+        content: "Año de presentacion";
+    }
+    td:nth-of-type(2):before{
+        content: "Genero musical";
+    }
+    td:nth-of-type(3):before{
+        content: "Tipo de duracion";
+    }
+    td:nth-of-type(4):before{
+        content: "Discografica";
+    }
+    tr img{
+        max-width: 100%;
+    }
+    td:nth-child(odd):before, td:nth-child(even):before{
+        background-color: grey;
+        color: ivory;
+    }
+    th:nth-child(odd):before, th:nth-child(even):before{
+        background-color: grey;
+        color: ivory;
+    }
+    th:nth-of-type(1):before,th{
+        display: inline-block;
+    }
+    /*Fin de tabla*/
+    /*Inicio de galeria*/
+    #galeria figure{
+        margin: 3px;
+        width: 100%;
+        background-color: blue;
+    }
+    #galeria img{
+        width: 100%;
+    }
+    /*Fin de galeria*/
+    /*Inicio de formulario*/
+    form{
+        background-color: black;
+        margin:auto 0;
+    }
+    legend{
+        color: white;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin:1em;
+    }
+    #Enviar, #limpiar{
+        color: red;
+        border: solid red 0.5em;
+        border-radius: 25%;
+        width: 100%;
+    }
+    /*Fin de formaulario*/
+}
+@media screen and (min-width:768px){
+    /*Inicio de columnas*/
+    .columnas{
+        column-count: 2;
+        column-width: 50%;
+        column-rule: dashed 0.2em;
+    }
+    .columnas p{
+        color:black
+    }
+    /*Fin de columnas*/
+    /*Inicio de galeria*/
+    #galeria{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    #galeria figure{
+        background-color: red;
+        margin: 0 auto;
+        width: 40%;
+    }
+    #galeria img{
+        width: 100%;
+    }
+    /*Fin de galeria*/
+    #abrir, #cerrarmenu{
+        display: none;
+    }
+    #menu2 #menu {
+        background-color: grey;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #menu a{
+        margin: 2rem;
+    }
+}
+@media screen and (min-width:1024px){
+    /*Inicio de columnas*/
+    .columnas{
+        column-count: 3;
+        column-width: 33%;
+        column-rule: dashed 0.2em;
+        column-gap: normal;
+        text-align: justify;
+        text-indent: 1em;
+    }
+    .columnas h2{
+        text-align: center;
+    }
+    .columnas p{
+        color: black;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*Fin de columnas*/
+    /*Inicio de navegacion*/
+    #menu{
+        height: 10vh;
+        background-color: grey;
+        opacity: 0.2em;
+    }
+    #menu a:hover, #menu a:focus{
+        background-color: gold;
+        color: honeydew;
+    }
+    #menu a{
+        margin: 2em;
+        transition: color 1s ease;
+        font-size: 1.4em;
+        color: black;
+        padding: 0.5em;
+    }
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*Fin de navegacion*/
+    /*Inicio de tabla*/
+    table{
+        margin: 0 auto;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    caption{
+        margin-top: 1px;
+        font-size: 2em;
+    }
+    tr, .titulos{
+        display: flex;
+        flex-direction: row;
+    }
+    th, td{
+        text-align: center;
+        width: 100%;
+    }
+    th figure{
+        width: 40%;
+    }
+    td{
+        padding-top: 2vw;
+    }
+    th figure img{
+        width: 100%;
+    }
+    th:nth-child(odd):before, th:nth-child(even):before,
+    td:nth-child(odd):before, td:nth-child(even):before{
+        display: none;
+    }
+    /*Fin de tablas*/
+    /*Inicio de galeria*/
+    #galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #galeria figure{
+        width: 30%;
+    }
+    #galeria img{
+        width: 100%;
+    }
+    /*Fin de galeria*/
+    /*Inicio de formulario*/
+    legend{
+        color: white;
+    }
+    form{
+        width: 40vw;
+        margin: 0 auto;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    label, input{
+        margin: 1rem;
+        display: inline-block;
+    }
+    #Enviar, #limpiar{
+        width: auto;
+    }
+    /*Fin de formulario*/
+}
+@media screen and (min-width:1440px){
+    /*Inicio de columnas*/
+    .columnas{
+        column-count: 3;
+        column-width: 33%;
+        column-rule: dashed 0.2em;
+        column-gap: normal;
+        text-align: justify;
+        text-indent: 1em;
+    }
+    .columnas h2{
+        text-align: center;
+    }
+    .columnas p{
+        color: black;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*Fin de columnas*/
+    /*Inicio de navegacion*/
+    #menu{
+        height: 10vh;
+        background-color: grey;
+        opacity: 0.2em;
+    }
+    #menu a:hover, #menu a:focus{
+        background-color: gold;
+        color: honeydew;
+    }
+    #menu a{
+        font-size: 1.4em;
+        color: black;
+        margin: 1vw;
+        padding: 1rem;
+    }
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*Fin de navegacion*/
+    /*Inicio de galeria*/
+    #galeria figure{
+        width: 25%;
+    }
+    /*Fin de galeria*/
+    /*Inicio del menu*/
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #menu a{
+        margin: 5rem;
+    }
+    /*Fin del menu*/
+}

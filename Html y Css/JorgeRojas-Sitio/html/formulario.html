@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacion sobre jorge rojas">
+    <meta name="author" content="Nicolas Leal">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Jorge rojas</title>
+</head>
+<body>
+    <nav id="accesibilidad">
+        <ul>
+            <li><a href="#principal">Saltar al contenido</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Jorge rojas</h1>
+    </header>
+    
+    <section id="menu2">
+        <a href="#menu2"><img src="../img/burger_menu.png" alt="menu cel" id="abrir"></a>
+        <a href="#"><img src="../img/cerrar_menu.png" alt="cerrar menu cel" id="cerrarmenu"></a>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="#">Formulario</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+        </ul>
+    </nav>
+    </section>
+    <main id="principal">
+        <section>
+            <form action="../php/formulario.php" post>
+                <fieldset>
+                    <legend>Formulario sobre el artista</legend>
+                    <label for="nombre">Nombre:
+                        <input type="text" name="nombre" id="nombre" placeholder="Colocque su nombre">
+                    </label>
+                    <label for="apellido">Apellido:
+                            <input type="text" id="apellido" name="Apellido" placeholder="Coloque su apellido">
+                    </label>
+                    <label for="edad">Edad:
+                        <input type="number" id="edad" name="edad" placeholder="Coloque su edad, solo el numero">
+                    </label>
+                    <label for="artista">Comentarios sobre el artista:
+                        <textarea name="artista" id="artista" cols="30" rows="10" placeholder="Comente sobre el artista"></textarea>
+                    </label>
+                </fieldset>
+                
+                <input type="submit" value="Enviar" id="Enviar">
+                <input type="reset" value="Limpiar" id="limpiar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>     © copyright Leal Nicolas
+            <a href="mailto:nicoleal14h@gmail.com"> Contacto</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty Black ops 3</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="description" content="Formulario de Call of duty black ops 3">
+    <meta name="author" content="Nicolas Leal">
+</head>
+<body>
+    <nav id="accesibilidad">
+        <ul>
+            <li><a href="#Principal">Contenido Principal</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <header>
+        <figure><a href="https://www.callofduty.com/es/blackops3" target="_blank">
+            <img src="../img/imagen de inicio" alt="Logo de call of duty"></a>
+        </figure>
+        <h1>Call of Duty Black Ops 3</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html"> Inicio</a></li>
+            <li><a href="multimedia.html">Galeria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contacto">
+            <main id="Principal">
+                <form action="../php/procesar.php" method="GET" id="formulario">
+                    <fieldset class="Contendor">
+                        <legend>Formulario sobre Call of duty</legend>
+                        <label for="nombre">Introduzca su nombre</label>
+                        <input type="text" id="nombre" required name="nombre">
+                        <label for="correo">Introduzca su email</label>
+                        <input type="email" id="correo" required name="correo">
+                    </fieldset>
+                    <fieldset class="Contenedor">
+                        <legend>Desea recibir notificaciones?</legend>
+                        <input type="radio" id="eleccion" value="si" name="eleccion" checked>
+                        <label for="eleccion">Si</label>
+                        <input type="radio" id="elecciones" value="no" name="eleccion" checked>
+                        <label for="elecciones">No</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10">Comentarios</textarea>
+                        <input type="submit" value="enviar" id="enviado">
+                        <label for="enviado"></label>
+                    </fieldset>
+                </form>
+            </main>
+            <aside>
+                <figure>
+                    <a href="https://www.callofduty.com/es/" target="_blank"> 
+                        <img src="../img/aside1.jpg" alt="Call Of Duty Warzone">
+                    </a>
+                    <figcaption>Juego similar </figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.muycomputer.com/2020/04/01/call-of-duty-modern-warfare-2-2/" target="_blank">
+                        <img src="../img/aside2.jpg" alt="Call of duty Modern Warfare">
+                    </a>
+                    <figcaption> Juego con la misma tematica</figcaption>
+                </figure>
+            </aside>
+    </section>
+    <footer>
+        <p>
+            <a href="https://www.callofduty.com/es/blackops3" target="_blank">Pagina oficial</a>
+            <a href="mailto:nicoleal14h@gmail.com">Contactos</a>
+        </p>
+    </footer>
+</body>
+</html>

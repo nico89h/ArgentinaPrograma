@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: black;
+}
+/*Navegacion para personas con discapacidades visuales*/
+#Accesibilidad{
+    background-color: darkgray;
+    opacity: 0.5;
+}
+#Accesibilidad ul{
+    display: flex;
+    flex-direction: row;
+}
+#Accesibilidad li{
+    margin-left: 1em;
+    list-style: none;
+
+}
+#Accesibilidad a{
+    text-decoration: none;
+}
+#Accesibilidad a:focus, #Accesibilidad a:hover{
+    background-color: blue;
+    color: honeydew;
+}
+/*Fin de la navegacion que permite accesibilidad*/
+/*Comienzo del encabezado*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: silver;
+}
+.Logoheader{
+    width: 30%;
+}
+img{
+    width: 100%;
+}
+#Titulo{
+    margin-top: 2em;
+    font-size: 3em;
+}
+/*Fin del encabezado*/
+/*Inicio del menu*/
+#menu1{
+    background-color:gray;
+}
+#menu1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+#menu1 a{
+    color: cornsilk;
+    font-size: 2em;
+    text-decoration: none;
+}
+#menu1 a:hover, #Menu1 a:focus{
+    color: beige;
+    background-color: darkgray;
+}
+/*Fin del menu*/
+/*Inicio de la parte principal de la pagina*/
+main{
+    background-color:thistle;
+    }
+#Section1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+#articulo1{
+    padding: 1em;
+    width: 50vw;
+    font-style: oblique;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 0.5em;
+    margin-bottom: 2rem;
+    background-color: darkgrey;
+    border: 1em solid white;
+    border-radius: 2.5em 0em;
+}
+#articulo2{
+    padding: 1em;
+    width: 50vw;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0.5em;
+    margin-bottom: 2rem;
+    background-color: darkgrey;
+    border: 1em solid white;
+    border-radius: 0em 2.5em;
+}
+.canciones{
+    text-decoration: none;
+}
+#articulo1 p{
+    margin: 1rem;
+}
+.Articulosimg{
+    margin: 1rem;
+    width: 56%;
+}
+.Articulosimg img{
+    width: 100%;
+    float: left;
+}
+
+/*Fin del contenido principal*/
+#Presentacionesec{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    font-size: 1.2em;
+    border-width:0em 0em 0em 0.5em;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 20%;
+}
+aside figure{
+    margin: 1.5em;
+    width: 80%;
+}
+aside figure img{
+    width: 100%;
+}
+#Contenidoprincipal{
+    width: 80%;
+}
+/*Inicio de table*/
+table{
+    margin-bottom: 2rem;
+    margin-right: 12vw;
+    margin-left: 10vw;
+    border: 1em solid wheat;
+    border-collapse: collapse;
+}
+caption{
+    margin: 1em;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+th{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3em;
+    border: 0.5em solid wheat; 
+}
+th figure{
+    padding: 1em;
+    width: 7rem;
+    height: 5rem;
+}
+th figure img{
+    width: 100%;
+    height: 5rem;
+}
+td{
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.2em;
+    border: 0.5em solid wheat;
+}
+.filaimpar{
+    background-color: gainsboro;
+}
+.filapar{
+    background-color: honeydew;
+}
+
+/*Fin del table*/
+/*Inicio del pie de pagina*/
+footer{
+    background-color: cornsilk;
+    text-align: center;
+}
+/*Fin del pie de pagina*/
