@@ -1,0 +1,52 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blue;
+
+}
+.row div{
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: medium;
+}
+.row div:hover{
+    background-color: green;
+}
+.title{
+    color: red;
+    background-color: black;
+}
+.prince{
+    background-color: red;
+}
+.row button{
+    width: fit-content;
+    height: 6vh;
+    margin:5px;
+    color: red;
+    background-color: black;
+}
+.quantity{
+    background-color: red;
+}
+
+/* div{
+    padding: 5px 0;
+}
+.title{
+    display: flex;
+    width: 50%;
+    padding: 0 5px;
+}
+.prince{
+    width: 15%;
+    padding: 0 5px;
+}
+.quantity{
+    width: 10%;
+    padding: 0 5px;
+} */

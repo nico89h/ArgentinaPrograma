@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+ul li{
+    margin: 10px;
+    background-color: black;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    font-size: x-large;
+    color: white;
+    
+}

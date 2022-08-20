@@ -1,0 +1,6 @@
+<section>
+    <!--Se va recorriendo por pantalla cada item de items-->
+    <app-total mensaje="Total a pagar: " [total]="total"></app-total>
+    <app-item *ngFor="let item of items" [item]="item" (deleteItem)="deleteItem($event)" (toggleItem)="toggleItem($event)">
+    </app-item>
+</section>

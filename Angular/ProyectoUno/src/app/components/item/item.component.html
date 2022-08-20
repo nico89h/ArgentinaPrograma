@@ -1,0 +1,19 @@
+<section class="row" [ngClass]="{'completed':item.completed}"><!--mostrara si esya maracado o no, se usa la clase se.completed-->
+    <div class="title">
+        <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
+        {{item.title}}
+    </div>
+    <div class="prince">
+        {{item.prince| currency}}
+    </div>
+    <div class="quantity">
+        {{item.quantity| currency}}
+    </div>
+    <div class="total">
+        {{item.prince * item.quantity}}
+    </div>
+    <button (click)="onDelete(item)">
+        Eliminar
+    </button>
+    
+</section>
